@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERIK 2025 (Perlombaan Akademik)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PERIK 2025</h1>
+        <h2>Informasi Perlombaan Akademik Tingkat Nasional SMA/SMK Sederajat</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#competitions">Daftar Lomba</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>PERIK (Perlombaan Akademik) Nasional SMA/SMK sederajat adalah ajang kompetisi bergengsi bagi pelajar tingkat SMA dan sederajat dari seluruh Indonesia. Lomba ini bertujuan untuk mengasah kemampuan siswa dalam berbagai bidang akademik, khususnya Matematika dan Sains. Selain itu, peserta akan mendapatkan pengalaman berharga melalui kompetisi yang sehat dan kolaboratif. Hadiah utama berupa beasiswa pendidikan serta total hadiah uang tunai senilai Rp20.000.000,-.</p>
+    </section>
+
+    <section id="competitions">
+        <h2>Daftar Lomba</h2>
+        <div class="competition">
+            <h3>Lomba Matematika Tingkat Nasional</h3>
+            <p>Tanggal: 15 Januari 2025</p>
+            <p>Peserta: Siswa SMA/SMK Sederajat </p>
+            <p>Lokasi: Universitas Indonesia</p>
+            <button onclick="showDetails('math')">Detail</button>
+            <p id="math" class="details">Reward: Rp10.000.000,-</p>
+        </div>
+        <div class="competition">
+            <h3>Lomba Sains Nasional</h3>
+            <p>Tanggal: 20 Februari 2025</p>
+            <p>Peserta: Siswa SMA/SMK Sederajat </p>
+            <p>Lokasi: ITB</p>
+            <button onclick="showDetails('science')">Detail</button>
+            <p id="science" class="details">Hadiah utama perjalanan studi ke Jepang!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Informasi Perlombaan Akademik</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
